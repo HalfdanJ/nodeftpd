@@ -11,7 +11,7 @@ describe('MLSD command', function() {
     client = common.client(done);
   });
 
-  it('should return "Type=" as first characters on all lines', function(done) {
+  it('should return valid mlsd output', function(done) {
     client.getPasvSocket(function(err, socket) {
       if (err) {
         throw err;
